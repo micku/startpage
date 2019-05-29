@@ -2,17 +2,27 @@
 <html>
   <head>
     <meta charset="UTF-8" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
     <style>
     .label {
       color: #000000;
+      margin-bottom: 20px;
     }
 
     .disabled {
       color: #030303;
     }
 
-    .foreground, p, h1, h2, h3, h4, h5, h6, a:visited, a:link, a:hover, a:active {
-      color: #000000;
+    h1 {
+      color: #bf616a;
+    }
+
+    h3 {
+      color: #8fa1b3;
+    }
+
+    .foreground, p, h2, h4, h5, h6, a:visited, a:link, a:hover, a:active {
+      color: #c0c5ce;
     }
 
     .center {
@@ -35,10 +45,10 @@
     }
 
     input {
-      background-color: #f7f7f7;
+      background-color: #2b303b;
       border: 1px #000000 solid;
       border-radius: 2px;
-      color: #62727b;
+      color: #eff1f5;
     }
     input[type="search"] {
       width: 45%;
@@ -47,7 +57,7 @@
       text-align: center;
     }
     input[type="search"]:hover, input[type="search"]:focus {
-      border-bottom-color: #000000;
+      border-bottom-color: #65737e;
     }
 
     ul {
@@ -59,65 +69,53 @@
     }
 
     * {
-      font-family: DejaVuSansMono Nerd Font;
+      font-family: 'Roboto Slab', serif;;
       -moz-user-select: none;
     }
 
     body {
-      background-color: #f7f7f7;
+      background-color: #2b303b;
     }
     </style>
     <script>
     const categories = {
-      "Anime": {
-        "AniList": "https://anilist.co/home",
-        "Crunchyroll": "https://crunchyroll.com",
-        "KissAnime": "https://kissanime.ru",
-        "Gundam Wiki": "https://gundam.wikia.com",
-        "Kino's Journey Wiki": "http://kinosjourney.fandom.com/",
-        "OS-Tan Collections": "https://www.ostan-collections.net",
-        "Pixiv": "https://www.pixiv.net",
-        "Senpai Heat": "https://www.senpaiheat.com/"
+      "Technology": {
+        "Hacker News": "https://news.ycombinator.com/",
+        "Stackshare": "https://stackshare.io/",
+      },
+      "Board games": {
+        "BoardGameGeek": "https://boardgamegeek.com/",
+        "CoolMiniOrNot Forums": "http://www.coolminiornot.com/forums/",
+      },
+      "Miniature painting": {
+        "Kujo Painting": "https://www.youtube.com/channel/UCyMPU99KvmxIMkD8NZQu1tA",
+        "Miniac": "https://www.youtube.com/user/SDubist",
+        "Bird With a Brush": "https://birdwithabrush.com/",
+        "Tangible Day": "https://tangibleday.com/",
+        "CoolMiniOrNot Gallery": "http://www.coolminiornot.com/browse",
+        "r/minipainting": "https://www.reddit.com/r/minipainting/",
+      },
+      "Fun": {
+        "Scottecs": "https://www.youtube.com/user/scottecs",
+        "xkcd": "https://xkcd.com/",
       },
       "Gaming": {
         "GameJolt": "https://gamejolt.com/",
         "PlayOnLinux": "https://www.playonlinux.com/en/",
-        "Steam": "https://store.steampowered.com/"
-      },
-      "Hardware": {
-        "Dell": "https://dell.com",
-        "Lenovo": "https://lenovo.com"
+        "Steam": "https://store.steampowered.com/",
+        "Polygon": "https://www.polygon.com/",
       },
       "Linux and Open Source": {
-        "Arch Linux": "https://archlinux.org",
-        "Debian": "https://www.debian.org/",
+        "r/unixporn": "https://www.reddit.com/r/unixporn/",
+        "ArchWiki": "https://wiki.archlinux.org/",
         "GitHub": "https://github.com",
-        "Lunduke.com": "http://lunduke.com/",
-        "Open Invention Network": "https://openinventionnetwork.com",
-        "Void Linux": "https://voidlinux.org"
       },
-      "Media and Chat": {
-        "Discord": "https://discordapp.com",
-        "Gitter": "https://gitter.im",
+      "Media": {
         "Imgur": "https://imgur.com",
         "Netflix": "https://netflix.com",
         "Twitch": "https://twitch.tv",
-        "Twitter": "https://twitter.com",
-        "YouTube": "https://youtube.com"
+        "YouTube": "https://youtube.com",
       },
-      "School": {
-        "Canvas": "https://sherwood.instructure.com",
-        "Naviance": "https://student.naviance.com/sherwoodhigh",
-        "SHS": "http://shs.sherwood.k12.or.us/",
-        "StudentVue": "https://student-sherwood.cascadetech.org/"
-      },
-      "Software": {
-        "i3wm": "https://i3wm.org",
-        "The Linux Kernel Archives": "https://kernel.org",
-      },
-      "Servers": {
-        "Cloudnode": "https://cloudno.de"
-      }
     };
 
     const positions = ["left", "center", "right"];
@@ -201,7 +199,7 @@
   </head>
   <body>
     <div class="label center">
-      <h1>Start Page</h1>
+      <h1>ಠ_ಠ</h1>
       <input type="search" id="search" placeholder="Search" />
     </div>
     <div id="boxes">
